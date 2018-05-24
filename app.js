@@ -17,4 +17,8 @@ app.use((req, res, next) => {
     next()
 })
 
+app.get('/', function(req, res){
+    res.send('hello world!')
+})
+
 module.exports = app
